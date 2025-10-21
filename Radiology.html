@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiology Services - AYUSHMAAN Diagnostics Centre</title>
+    <link rel="icon" type="image/png" href="./Asset/Img/Site Icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Re-using the same header -->
+    <header>
+        <nav class="navbar">
+            <a href="./Index.html" class="logo">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo">
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./Index.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                 <li><a href="./aboutUs.html"><span class="material-symbols-outlined">info</span>About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="services-dropdown-button" aria-haspopup="true"
+                        aria-expanded="false" aria-controls="services-dropdown-menu">
+                        <span class="material-symbols-outlined">science</span>
+                        Services
+                        <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>
+                    </a>
+                    <ul class="dropdown-menu" id="services-dropdown-menu" aria-labelledby="services-dropdown-button">
+                        <li><a href="./MRI.html">3T MRI</a></li>
+                        <li><a href="./CTScan.html">160 Slice CT Scan</a></li>
+                        <li><a href="./Radiology.html">Radiology</a></li>
+                    </ul>
+                </li>
+                <li><a href="./packages.html"><span class="material-symbols-outlined">vaccines</span>Packages</a></li>
+                <li><a href="./Index.html#teams"><span class="material-symbols-outlined">groups</span>Our Teams</a></li>
+                <li><a href="./Index.html#gallery"><span class="material-symbols-outlined">photo_library</span>Gallery</a></li>
+            </ul>
+
+            <a href="#contact"><button class="cta-button">Book Now</button></a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === PAGE HEADER === -->
+        <section class="page-header" style="background-image: url('./Asset/Img/Radiology_banner.jpg');">
+            <div class="page-header-content">
+                <h1>Comprehensive Radiology Services</h1>
+                <p>Advanced imaging techniques for accurate and detailed diagnosis.</p>
+            </div>
+        </section>
+
+        <!-- === SERVICE DETAILS CONTAINER === -->
+        <div class="service-details-container">
+            <section class="service-content-section">
+                <h2>The Role of Radiology in Healthcare</h2>
+                <p>Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body. Radiologists are expert medical doctors who interpret these images to provide crucial information for your healthcare. At AYUSHMAAN, our radiology department is equipped with cutting-edge technology to perform a wide array of diagnostic imaging procedures, ensuring your doctor receives a clear and precise picture of your health.</p>
+            </section>
+
+            <section class="service-content-section">
+                <h3>Our Core Radiology Services</h3>
+                <ul class="advantages-list">
+                    <li><span class="material-symbols-outlined">check_circle</span><strong>Digital X-Ray:</strong> Provides fast and clear images of bones and certain soft tissues, essential for diagnosing fractures, infections, and other conditions.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span><strong>Ultrasound (USG):</strong> Uses sound waves to create real-time images of organs and blood vessels. It is a safe, radiation-free method for various examinations, including obstetrics.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span><strong>Color Doppler:</strong> A specialized type of ultrasound that allows us to visualize blood flow through arteries and veins, critical for detecting blockages or clots.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span><strong>Mammography:</strong> A specific type of breast imaging that uses low-dose x-rays to detect cancer early, before women experience symptoms.</li>
+                     <li><span class="material-symbols-outlined">check_circle</span><strong>OPG (Orthopantomogram):</strong> A panoramic dental X-ray of the upper and lower jaws, providing a complete overview of the teeth and jaw structure.</li>
+                </ul>
+            </section>
+
+             <section class="service-content-section">
+                <h3>Patient-Centered Imaging Experience</h3>
+                 <p>We are committed to making your imaging procedure as comfortable and stress-free as possible.</p>
+                <ol class="procedure-list">
+                    <li><strong>Consultation & Preparation:</strong> Our team will explain the procedure clearly and provide any necessary preparation instructions. We encourage you to ask any questions you may have.</li>
+                    <li><strong>The Procedure:</strong> Our skilled technologists will position you correctly and guide you through each step of the imaging process, ensuring your comfort and safety at all times.</li>
+                    <li><strong>Expert Interpretation:</strong> After your scan, our team of experienced radiologists will meticulously analyze the images and compile a comprehensive report for your referring physician.</li>
+                </ol>
+            </section>
+            
+            <section class="service-cta-section">
+                <h3>Book Your Radiology Appointment</h3>
+                <p>For any imaging service, please contact us to schedule an appointment at your convenience.</p>
+                <a href="#contact" class="cta-button">Book Now</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Re-using the same footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo" class="footer-logo">
+                 <p>Your trusted partner in diagnostics, providing accurate and timely reports.</p>
+                 <div class="social-media-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+             <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./Index.html#packages">Packages</a></li>
+                    <li><a href="./Index.html#teams">Our Teams</a></li>
+                    <li><a href="./Index.html#gallery">Gallery</a></li>
+                    <li><a href="./Index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column our-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="./MRI.html">3T MRI</a></li>
+                    <li><a href="./CTScan.html">CT Scan</a></li>
+                    <li><a href="./Radiology.html">Radiology</a></li>
+                </ul>
+            </div>
+             <div class="footer-column contact-info">
+                <h3>Contact Us</h3>
+                <p><span class="material-symbols-outlined">location_on</span> 123 Health St, Surat</p>
+                <p><span class="material-symbols-outlined">call</span> +91 123-456-7890</p>
+                <p><span class="material-symbols-outlined">mail</span> info@ayushmaan.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AYUSHMAAN MRI & Diagnostics Centre. All Rights Reserved.</p>
+             <div class="developer-credit">
+                <p>Designed & Developed by <a href="https://zainabbhuriyaseth.netlify.app/" target="_blank">Zainabbibi N. Bhuriyaseth</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="Script.js"></script>
+</body>
+
+</html>
+

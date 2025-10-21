@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUSHMAAN Diagnostics Centre</title>
+    <link rel="icon" type="image/png" href="./Asset/Img/Site Icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header>
+        <nav class="navbar">
+            <a href="./Index.html" class="logo">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo">
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./Index.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                 <li><a href="./aboutUs.html"><span class="material-symbols-outlined">info</span>About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="services-dropdown-button" aria-haspopup="true"
+                        aria-expanded="false" aria-controls="services-dropdown-menu">
+                        <span class="material-symbols-outlined">science</span>
+                        Services
+                        <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>
+                    </a>
+                    <ul class="dropdown-menu" id="services-dropdown-menu" aria-labelledby="services-dropdown-button">
+                        <li><a href="./MRI.html">3T MRI</a></li>
+                        <li><a href="./CTScan.html">160 Slice CT Scan</a></li>
+                        <li><a href="./Radiology.html">Radiology</a></li>
+                    </ul>
+                </li>
+                <li><a href="./packages.html"><span class="material-symbols-outlined">vaccines</span>Packages</a></li>
+                <li><a href="./Index.html#teams"><span class="material-symbols-outlined">groups</span>Our Teams</a></li>
+                <li><a href="./Index.html#gallery"><span class="material-symbols-outlined">photo_library</span>Gallery</a></li>
+            </ul>
+
+            <a href="#contact"><button class="cta-button">Book Now</button></a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === HERO SECTION === -->
+        <section class="hero-section" id="home">
+            <div class="owl-carousel owl-theme hero-carousel">
+                <div class="item" style="background-image: url('./Asset/Img/MRI.jpg');">
+                    <div class="hero-text">
+                        <h1>State-of-the-Art Diagnostic Services</h1>
+                        <p>Providing precise and reliable results with advanced technology.</p>
+                        <a href="#packages" class="hero-cta">View Health Packages</a>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('./Asset/Img/Radiology.jpg');">
+                    <div class="hero-text">
+                        <h1>Compassionate Care You Can Trust</h1>
+                        <p>Our team is dedicated to your health and well-being.</p>
+                        <a href="#contact" class="hero-cta">Book an Appointment</a>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('./Asset/Img/Sonography.jpg');">
+                    <div class="hero-text">
+                        <h1>Convenient Home Sample Collection</h1>
+                        <p>Get tested from the comfort of your home, safely and easily.</p>
+                        <a href="#home-collection" class="hero-cta">Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === WHY CHOOSE US SECTION === -->
+        <section class="features-section">
+            <h2 class="section-title">Why Choose AYUSHMAAN?</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <span class="material-symbols-outlined">verified</span>
+                    <h3>Accurate Reports</h3>
+                    <p>Our certified labs ensure the highest level of accuracy for all tests.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <h3>Timely Delivery</h3>
+                    <p>Access your reports online, delivered quickly and efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="material-symbols-outlined">biotech</span>
+                    <h3>Advanced Technology</h3>
+                    <p>We use the latest equipment for fast and dependable results.</p>
+                </div>
+            </div>
+        </section>
+        <!-- === HOME PACKAGES SECTION === -->
+        <section class="home-packages-section" id="packages">
+            <h2 class="section-title">Popular Health Packages</h2>
+            <div class="packages-container">
+                <!-- Copied from packages.html -->
+                <div class="package-card">
+                    <h3 class="package-title">Basic Wellness Check</h3>
+                    <p class="package-price">₹1,299</p>
+                    <ul class="package-tests">
+                        <li>Complete Blood Count (CBC)</li>
+                        <li>Blood Sugar (Fasting & PP)</li>
+                        <li>Lipid Profile</li>
+                        <li>Kidney Function Test (KFT)</li>
+                    </ul>
+                    <a href="#contact" class="cta-button package-button">Book Now</a>
+                </div>
+                <div class="package-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3 class="package-title">Advanced Wellness Check</h3>
+                    <p class="package-price">₹2,499</p>
+                    <ul class="package-tests">
+                        <li>All tests from Basic Wellness</li>
+                        <li>Thyroid Profile (T3, T4, TSH)</li>
+                        <li>Vitamin D & B12</li>
+                        <li>ECG (Electrocardiogram)</li>
+                    </ul>
+                    <a href="#contact" class="cta-button package-button">Book Now</a>
+                </div>
+                <div class="package-card">
+                    <h3 class="package-title">Cardiac Health Profile</h3>
+                    <p class="package-price">₹1,999</p>
+                    <ul class="package-tests">
+                        <li>Lipid Profile (Detailed)</li>
+                        <li>Hs-CRP & Homocysteine</li>
+                        <li>Apolipoprotein (A1 & B)</li>
+                        <li>ECG (Electrocardiogram)</li>
+                    </ul>
+                    <a href="#contact" class="cta-button package-button">Book Now</a>
+                </div>
+            </div>
+            <div class="view-all-packages-button">
+                <a href="./Index.html#packages" class="cta-button">View All Packages</a>
+            </div>
+        </section>
+        <!-- === OUR TEAM SECTION === -->
+        <section class="team-section" id="teams">
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <div class="team-container">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./Asset/Img/doctor1.jpg" alt="Dr. Anjali Sharma">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dr. Anjali Sharma</h3>
+                        <p class="team-designation">Chief Radiologist</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./Asset/Img/doctor2.jpg" alt="Dr. Rahul Verma">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dr. Rahul Verma</h3>
+                        <p class="team-designation">Head of Pathology</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./Asset/Img/technician1.jpg" alt="Priya Singh">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Priya Singh</h3>
+                        <p class="team-designation">Senior MRI Technician</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === GALLERY SECTION === -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Our Advanced Machinery</h2>
+            <div class="gallery-container">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-mri.jpg" alt="3T MRI Machine">
+                    <div class="gallery-caption">
+                        <h3>3T MRI Machine</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-ctscan.jpg" alt="160 Slice CT Scanner">
+                    <div class="gallery-caption">
+                        <h3>160 Slice CT Scanner</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-usg.jpg" alt="Ultrasound Machine">
+                    <div class="gallery-caption">
+                        <h3>4D Ultrasound (USG)</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-xray.jpg" alt="Digital X-Ray">
+                    <div class="gallery-caption">
+                        <h3>Digital X-Ray</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-mammo.jpg" alt="Mammography Machine">
+                    <div class="gallery-caption">
+                        <h3>Mammography</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="./Asset/Img/machine-opg.jpg" alt="OPG Machine">
+                    <div class="gallery-caption">
+                        <h3>Dental OPG</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- === FOOTER SECTION === -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo" class="footer-logo">
+                 <p>Your trusted partner in diagnostics, providing accurate and timely reports.</p>
+                 <div class="social-media-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+             <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./Index.html#packages">Packages</a></li>
+                    <li><a href="./Index.html#teams">Our Teams</a></li>
+                    <li><a href="./Index.html#gallery">Gallery</a></li>
+                    <li><a href="./Index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column our-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="./MRI.html">3T MRI</a></li>
+                    <li><a href="./CTScan.html">CT Scan</a></li>
+                    <li><a href="./Radiology.html">Radiology</a></li>
+                </ul>
+            </div>
+             <div class="footer-column contact-info">
+                <h3>Contact Us</h3>
+                <p><span class="material-symbols-outlined">location_on</span> 123 Health St, Surat</p>
+                <p><span class="material-symbols-outlined">call</span> +91 123-456-7890</p>
+                <p><span class="material-symbols-outlined">mail</span> info@ayushmaan.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AYUSHMAAN MRI & Diagnostics Centre. All Rights Reserved.</p>
+            <div class="developer-credit">
+                <p>Designed & Developed by <a href="https://zainabbhuriyaseth.netlify.app/" target="_blank">Zainabbibi
+                        N. Bhuriyaseth</a></p>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>

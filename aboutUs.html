@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AYUSHMAAN Diagnostics Centre</title>
+    <link rel="icon" type="image/png" href="./Asset/Img/Site Icon .jpeg">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Your Custom CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="./Index.html" class="logo">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo">
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./Index.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                 <li><a href="./aboutUs.html"><span class="material-symbols-outlined">info</span>About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="services-dropdown-button" aria-haspopup="true"
+                        aria-expanded="false" aria-controls="services-dropdown-menu">
+                        <span class="material-symbols-outlined">science</span>
+                        Services
+                        <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>
+                    </a>
+                    <ul class="dropdown-menu" id="services-dropdown-menu" aria-labelledby="services-dropdown-button">
+                        <li><a href="./MRI.html">3T MRI</a></li>
+                        <li><a href="./CTScan.html">160 Slice CT Scan</a></li>
+                        <li><a href="./Radiology.html">Radiology</a></li>
+                    </ul>
+                </li>
+                <li><a href="./packages.html"><span class="material-symbols-outlined">vaccines</span>Packages</a></li>
+                <li><a href="./Index.html#teams"><span class="material-symbols-outlined">groups</span>Our Teams</a></li>
+                <li><a href="./Index.html#gallery"><span class="material-symbols-outlined">photo_library</span>Gallery</a></li>
+            </ul>
+
+            <a href="#contact"><button class="cta-button">Book Now</button></a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === PAGE HEADER === -->
+        <section class="page-header" style="background-image: url('./Asset/Img/about-us-banner.jpg');">
+            <div class="page-header-content">
+                <h1>About AAYUSHMAAN Diagnostics</h1>
+                <p>A Legacy of Trust, A Future of Excellence in Healthcare</p>
+            </div>
+        </section>
+
+        <!-- === OUR STORY SECTION === -->
+        <section class="about-page-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">Our Story</h2>
+                    <p>Founded with the vision to bring world-class diagnostic services to the heart of Surat, AAYUSHMAAN MRI & Diagnostics Centre began its journey as a single, dedicated facility. Our goal was simple yet profound: to provide every patient with precise, reliable, and timely diagnostic insights in a compassionate and comfortable environment.</p>
+                    <p>Over the years, we have grown into a leading name in healthcare, trusted by doctors and patients alike. Our commitment has always been to invest in the latest technology and the finest medical expertise to ensure that our community has access to the best care possible.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./Asset/Img/facility-exterior.jpg" alt="Exterior of Aayushman Diagnostics Centre">
+                </div>
+            </div>
+        </section>
+
+        <!-- === MISSION & VISION SECTION === -->
+        <section class="mission-vision-section">
+             <div class="mission-vision-container">
+                <div class="mission-card">
+                    <span class="material-symbols-outlined">track_changes</span>
+                    <h3>Our Mission</h3>
+                    <p>To deliver unparalleled diagnostic accuracy and patient care through advanced technology, ethical practices, and a dedicated team of professionals, ensuring the well-being of our community.</p>
+                </div>
+                <div class="mission-card">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted and respected diagnostic healthcare provider in the region, renowned for our clinical excellence, technological superiority, and unwavering commitment to patient health.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- === OUR FACILITY SECTION === -->
+        <section class="about-page-section">
+            <div class="about-container reverse">
+                 <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">State-of-the-Art Facility</h2>
+                    <p>Our center is designed with your comfort and safety in mind. From our spacious, clean waiting areas to our advanced diagnostic rooms, every detail has been carefully considered. We are proud to house some of the most sophisticated equipment in the industry, including a 3T MRI and a 160 Slice CT Scanner, which allow for faster, clearer, and more detailed imaging.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./Asset/Img/facility-interior.jpg" alt="Interior waiting area of the center">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === FOOTER SECTION === -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about-us">
+                <img src="./Asset/Img/logo.png" alt="AYUSHMAAN Diagnostics Centre Logo" class="footer-logo">
+                 <p>Your trusted partner in diagnostics, providing accurate and timely reports.</p>
+                 <div class="social-media-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+             <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./Index.html#packages">Packages</a></li>
+                    <li><a href="./Index.html#teams">Our Teams</a></li>
+                    <li><a href="./Index.html#gallery">Gallery</a></li>
+                    <li><a href="./Index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column our-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="./MRI.html">3T MRI</a></li>
+                    <li><a href="./CTScan.html">CT Scan</a></li>
+                    <li><a href="./Radiology.html">Radiology</a></li>
+                </ul>
+            </div>
+             <div class="footer-column contact-info">
+                <h3>Contact Us</h3>
+                <p><span class="material-symbols-outlined">location_on</span> 123 Health St, Surat</p>
+                <p><span class="material-symbols-outlined">call</span> +91 123-456-7890</p>
+                <p><span class="material-symbols-outlined">mail</span> info@ayushmaan.com</p>
+            </div>
+        </div>
+       <div class="footer-bottom">
+            <p>&copy; 2024 AYUSHMAAN MRI & Diagnostics Centre. All Rights Reserved.</p>
+             <div class="developer-credit">
+                <p>Designed & Developed by <a href="https://zainabbhuriyaseth.netlify.app/" target="_blank">Zainabbibi N. Bhuriyaseth</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
